@@ -12,6 +12,7 @@ spec:
       protocol: TCP
       name: http
   selector:
+    app: hello-world-test
     app.kubernetes.io/name: hello-world
     app.kubernetes.io/instance: release-0985a4571bb502b1f65555b939051281057ae711
    
