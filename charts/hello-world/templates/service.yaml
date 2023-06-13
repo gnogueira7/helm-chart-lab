@@ -12,4 +12,7 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "hello-world.selectorLabels" . | nindent 4 }}
+    app.kubernetes.io/name: hello-world
+    app.kubernetes.io/instance: release-0985a4571bb502b1f65555b939051281057ae711
+    env: test
+    
